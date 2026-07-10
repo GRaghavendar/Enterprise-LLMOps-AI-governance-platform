@@ -131,15 +131,62 @@ Dashboard modes:
 ## Project Structure
 
 ```text
-app/                         Streamlit dashboard
-data/sample/                 Synthetic evaluation datasets
-docs/                        Architecture, workflow, API, gates
-knowledge_base/policies/     Synthetic enterprise policy documents
-reports/generated/           Local report outputs
-reports/sample/              Portfolio-ready sample report outputs
-src/llmops_governance/       Python package
-tests/                       Unit and integration tests
-.github/workflows/ci.yml     CI pipeline
+enterprise-llmops-ai-governance-platform/
+|-- app/
+|   `-- streamlit_app.py                  # Streamlit dashboard and evaluation playground
+|-- data/
+|   `-- sample/                           # Synthetic evaluation and attack datasets
+|       |-- eval_questions.csv
+|       |-- attack_test_cases.csv
+|       |-- sample_model_responses.csv
+|       |-- sample_retrieval_contexts.csv
+|       |-- synthetic_prompts.csv
+|       `-- eval_manifest.json
+|-- docs/
+|   |-- architecture.md
+|   |-- workflow.md
+|   |-- evaluation_methodology.md
+|   |-- governance_framework.md
+|   |-- api_reference.md
+|   |-- ci_cd_gates.md
+|   `-- screenshots/                      # README screenshots
+|-- knowledge_base/
+|   `-- policies/                         # Synthetic enterprise policy documents
+|       |-- ai_usage_policy.md
+|       |-- privacy_policy.md
+|       |-- refund_policy.md
+|       |-- vendor_risk_policy.md
+|       |-- incident_response_policy.md
+|       |-- customer_support_policy.md
+|       `-- data_retention_policy.md
+|-- reports/
+|   |-- generated/                        # Latest local run outputs
+|   `-- sample/                           # Portfolio-ready sample reports
+|-- scripts/                              # Windows setup and launch helpers
+|-- src/
+|   `-- llmops_governance/
+|       |-- api/                          # FastAPI endpoints
+|       |-- cli/                          # CLI commands and CI/CD gate entry points
+|       |-- config/                       # Settings and threshold configuration
+|       |-- data/                         # Synthetic data generation
+|       |-- evaluators/                   # RAG scoring and LLM judge logic
+|       |-- governance/                   # Readiness decisions, model/system cards, risk register
+|       |-- observability/                # Audit logs, traces, drift helpers
+|       |-- providers/                    # Mock, OpenAI, and Ollama provider adapters
+|       |-- reports/                      # JSON, CSV, Markdown, and HTML report generation
+|       |-- retrieval/                    # Markdown loader, chunker, TF-IDF retriever
+|       |-- schemas/                      # Dataclass schemas for evaluation and governance
+|       |-- security/                     # Prompt injection, PII/secrets, unsafe output scanners
+|       `-- storage/                      # File and SQLite storage adapters
+|-- tests/                                # Unit and integration tests
+|-- .github/workflows/ci.yml              # GitHub Actions workflow
+|-- Dockerfile
+|-- docker-compose.yml
+|-- pyproject.toml
+|-- requirements.txt
+|-- RUN_COMMANDS.md
+|-- GITHUB_UPLOAD_COMMANDS.md
+`-- README.md
 ```
 
 ## Windows PowerShell Setup
@@ -280,4 +327,3 @@ All included data is synthetic. Do not add real PII, PHI, PCI, credentials, API 
 - Add vector database and embedding provider adapters.
 - Add policy-as-code rules with YAML controls.
 - Add richer model comparison across real providers.
-
