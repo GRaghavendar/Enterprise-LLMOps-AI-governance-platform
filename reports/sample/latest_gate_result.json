@@ -1,0 +1,19 @@
+{
+  "failed_rules": [],
+  "run_id": "run_bbe37cf275a2",
+  "status": "approved",
+  "summary": {
+    "average_citation_coverage": 1.0,
+    "average_context_relevance": 0.8583,
+    "average_groundedness": 0.9361,
+    "average_hallucination_risk": 0.0761,
+    "average_overall_risk": 0.0326,
+    "average_pii_secrets_risk": 0.0,
+    "average_prompt_injection_risk": 0.0167,
+    "average_retrieval_score": 0.3693,
+    "failed_cases": 2,
+    "pass_rate": 0.9722,
+    "passed_cases": 70,
+    "total_cases": 72
+  }
+}

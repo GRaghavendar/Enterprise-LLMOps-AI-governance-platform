@@ -1,0 +1,2 @@
+[console_scripts]
+llmops-governance = llmops_governance.cli.main:main

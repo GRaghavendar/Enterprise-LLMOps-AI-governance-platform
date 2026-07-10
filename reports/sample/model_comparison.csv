@@ -1,0 +1,2 @@
+average_groundedness,average_hallucination_risk,average_prompt_injection_risk,governance_status,model_mode,model_version,pass_rate,provider
+0.9361,0.0761,0.0167,approved,grounded,grounded,0.9722,deterministic

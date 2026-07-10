@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-llmops-ai-governance-platform"
+version = "0.1.0"
+description = "Offline-first LLMOps and AI governance platform for RAG evaluation, security scanning, and CI/CD quality gates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Raghavendar Gorintla" }]
+keywords = ["llmops", "rag", "ai-governance", "model-evaluation", "prompt-injection", "mlops"]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "pydantic>=2.0",
+    "streamlit>=1.34",
+    "plotly>=5.20",
+    "pytest>=8.0",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "rich>=13.0",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+llmops-governance = "llmops_governance.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+

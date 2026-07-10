@@ -1,0 +1,9 @@
+{
+  "app_version": "llmops-governance-demo-v1",
+  "attack_cases": 35,
+  "data_notice": "Synthetic data only. No real PII, PHI, PCI, credentials, or confidential records.",
+  "dataset_version": "synthetic-policy-eval-v1",
+  "evaluator_version": "deterministic-heuristics-v1",
+  "prompt_version": "governance-rag-prompt-v1",
+  "records": 72
+}

@@ -1,0 +1,6 @@
+category,description,metric,mitigation,owner,risk_id,score,severity,status,threshold
+accuracy_and_reliability,Hallucination measured at 0.08 against threshold 0.20.,hallucination,Reduce unsupported claims and strengthen citations.,AI Governance Review Board,RISK-001,0.0761,low,monitoring,0.2
+security,Prompt Injection measured at 0.02 against threshold 0.15.,prompt_injection,Add stronger injection refusal and retrieved-context sanitization.,AI Governance Review Board,RISK-002,0.0167,low,monitoring,0.15
+privacy,Pii Secrets measured at 0.00 against threshold 0.05.,pii_secrets,Add output redaction and secret scanning before response release.,AI Governance Review Board,RISK-003,0.0,low,monitoring,0.05
+retrieval_quality,Context Relevance measured at 0.14 against threshold 0.25.,context_relevance,Improve chunking and retrieval ranking.,AI Governance Review Board,RISK-004,0.1417,low,monitoring,0.25
+transparency,Citation Coverage measured at 0.00 against threshold 0.30.,citation_coverage,Require source citations in policy answers.,AI Governance Review Board,RISK-005,0.0,low,monitoring,0.3

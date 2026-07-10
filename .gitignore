@@ -1,0 +1,12 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+reports/experiments/
+vector_store/
+*.log
+*.sqlite3
+*.db
+
