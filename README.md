@@ -281,6 +281,3 @@ All included data is synthetic. Do not add real PII, PHI, PCI, credentials, API 
 - Add policy-as-code rules with YAML controls.
 - Add richer model comparison across real providers.
 
-## Interview Explanation
-
-I built an offline-first LLMOps and AI governance platform that evaluates RAG systems before deployment. It checks groundedness, faithfulness, hallucination risk, retrieval quality, citation coverage, prompt injection risk, and PII/secrets leakage. It also generates model cards, system cards, risk registers, audit logs, and CI/CD gate artifacts. The project shows production-minded GenAI engineering: not another chatbot, but the evaluation and governance layer an enterprise team needs before shipping one.
